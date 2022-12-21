@@ -7,3 +7,33 @@
     font-family: 'Roboto', sans-serif;
     }
 }
+
+@layer components {
+  .container {
+      @apply max-w-[1200px]
+  }
+}
+
+.head {
+  background-image: url(./img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-one {
+  background-image: url(./img/free.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-two {
+  background-image: url(./img/standart.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-tree {
+  background-image: url(./img/prem.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

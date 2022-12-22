@@ -14,10 +14,11 @@
   }
 }
 
-.head {
+.head { 
   background-image: url(./img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center 75%;
 }
 
 .card-one {

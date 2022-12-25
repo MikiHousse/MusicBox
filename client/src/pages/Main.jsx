@@ -1,18 +1,20 @@
 import React from 'react'
-import Logo from '../img/logo.svg'
+// import Logo from '../img/logo.svg'
 import Eminem from '../img/eminem.jpg'
 import AvatarOne from '../img/avatarOne.png'
 import Ordinary from '../img/ordinary.png'
 import Phone from '../img/phone.png'
-import Google from '../img/Google.svg'
-import Twiter from '../img/Twitter.svg'
-import Facrbook from '../img/Facebook.svg'
-import Instagram from '../img/Instagram.svg'
+// import Google from '../img/Google.svg'
+// import Twiter from '../img/Twitter.svg'
+// import Facrbook from '../img/Facebook.svg'
+// import Instagram from '../img/Instagram.svg'
+import ButtonOrders from '../components/ButtonOrders.jsx'
+import ButtonAlbom from '../components/ButtonAlbom'
 
 export const Main = () => {
   return (
-    <>
-        <div className='container left-[120px] sm:left-0'>
+    <>  
+        {/* <div className='container left-[120px] sm:left-0'>
             <header className='absolute text-white pt-6'>
                 <nav className='flex sm:grid'>
                     <div className='flex gap-24 sm:grid sm:gap-4'>
@@ -21,17 +23,17 @@ export const Main = () => {
                             <p className=' uppercase pt-1 sm:text-xs'>Music Box</p>
                         </a>
                         <ul className='flex gap-6 pt-1 sm:grid sm:gap-1'>
-                            <li>
-                                <a className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all' href=".">Главная</a>
+                            <li className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all' >
+                                <a href=".">Главная</a>
                             </li>
-                            <li>
-                                <a className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all' href=".">Каталог</a>
+                            <li className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all'>
+                                <a href=".">Каталог</a>
                             </li>
-                            <li>
-                                <a className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all' href=".">Исполнители</a>
+                            <li className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all'>
+                                <a href=".">Исполнители</a>
                             </li>
-                            <li>
-                                <a className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all' href=".">Контакты</a>
+                            <li className='uppercase text-base text-grayText sm:text-xs hover:text-white hover:transition-all'>
+                                <a href=".">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -40,11 +42,11 @@ export const Main = () => {
                     </label>
                 </nav>
             </header>
-        </div>
+        </div> */}
         <main className='bg-black'>
             <h1 className=' hidden'>Музыкальный сервис Music Box</h1>
             <section className='head'>
-                <div className='container text-white pt-[120px] pb-52 sm:pt-[300px]'>
+                <div className='container text-white pt-[170px] pb-52 sm:pt-[300px]'>
                     <div className='grid text-center'>
                         <p className='text-[60px] uppercase font-bold sm:text-3xl sm:w-[350px]'>Онлайн музыка где угодно</p>
                         <p className='text-[38px] uppercase font-bold sm:text-lg sm:w-[350px] sm:pt-2'>без ограничений</p>
@@ -76,9 +78,10 @@ export const Main = () => {
                                 <span className='text-6xl mr-4'>0</span>
                                 <sup className='text-3xl'>РУБ.</sup>
                             </div>
-                            <div className=' text-center pt-20'>
+                            {/* <div className=' text-center pt-20'>
                                 <a className='px-[110px] border-2 py-5 inline-block rounded-xl hover:bg-gray-200 hover:text-black hover:transition-all' href=".">ОФОРМИТЬ</a>
-                            </div>
+                            </div> */}
+                            <ButtonOrders/>
                             <p className='text-[12.8px] pt-[64px] text-center px-5'>Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
                         </div>
                         <div className='card-two w-[365px] h-[610px] rounded-xl'>
@@ -87,9 +90,10 @@ export const Main = () => {
                                 <span className='text-6xl mr-4'>250</span>
                                 <sup className='text-3xl'>РУБ.</sup>
                             </div>
-                            <div className=' text-center pt-20'>
+                            <ButtonOrders/>
+                            {/* <div className=' text-center pt-20'>
                                 <a className='px-[110px] border-2 py-5 inline-block rounded-xl hover:bg-gray-200 hover:text-black hover:transition-all' href=".">ОФОРМИТЬ</a>
-                            </div>
+                            </div> */}
                             <p className='text-[12.8px]  pt-[64px] text-center px-5'>Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве.</p>
                         </div>
                         <div className='card-tree w-[365px] h-[610px] rounded-xl'>
@@ -98,9 +102,10 @@ export const Main = () => {
                                 <span className='text-6xl mr-4'>500</span>
                                 <sup className='text-3xl'>РУБ.</sup>
                             </div>
-                            <div className=' text-center pt-20'>
+                            <ButtonOrders/>
+                            {/* <div className=' text-center pt-20'>
                                 <a className='px-[110px] border-2 py-5 inline-block rounded-xl hover:bg-gray-200 hover:text-black hover:transition-all' href=".">ОФОРМИТЬ</a>
-                            </div>
+                            </div> */}
                             <p className='text-[12.8px] pt-[64px] text-center px-5'>Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве.</p>
                         </div>
                     </div>
@@ -122,23 +127,26 @@ export const Main = () => {
                                 <a href='.' className='text-avtorColor'>Music box</a>
                                 <p className='text-grayText'>17/01/2020</p>
                             </div>
-                            <div className='pt-12'>
+                            <ButtonAlbom/>
+                            {/* <div className='pt-12'>
                                 <a className='px-[30px] border-2 py-4 inline-block rounded-xl border-grayText text-grayText hover:border-white hover:text-white hover:transition-all' href=".">К альбому</a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className='pt-20 grid grid-cols-[575px_575px] gap-[50px] sm:grid-cols-[1fr]'>
                         <div className='sm:order-last'>
                             <h3 className='text-3xl'>Ordinary Man</h3>
                             <p className='text-base text-grayText pt-[30px]'>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+                            {/* тут тоже можно сдедать компонент пользователя только нужно сделать элемент пользователя не зависымим от даты  */}
                             <div className='flex pt-11 gap-4 sm:pt-6'>
                                 <img className='w-[18px] h-[18px]' src={AvatarOne} alt="" />
                                 <a href='.' className='text-avtorColor'>Music box</a>
                                 <p className='text-grayText'>24/02/2020</p>
                             </div>
-                            <div className='pt-12'>
+                            <ButtonAlbom/>
+                            {/* <div className='pt-12'>
                                 <a className='px-8 border-2 py-4 inline-block rounded-xl border-grayText text-grayText hover:border-white hover:text-white hover:transition-all' href=".">К альбому</a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className='sm:order-10'>
                             <img className='w-[575px] h-[286px] sm:w-[375px] sm:h-[185px] sm:order-2' src={Ordinary} alt="" />
@@ -164,7 +172,7 @@ export const Main = () => {
                 </div>
             </section>
         </main>
-        <footer className=' bg-gradient-to-r from-reds to-violet text-white'>
+        {/* <footer className=' bg-gradient-to-r from-reds to-violet text-white'>
             <div className='container flex gap-[120px] sm:grid sm:gap-[20px]'>
                 <div className='pt-16 pb-[72px] sm:pt-4 sm:pb-[0px]'>
                     <h3 className='uppercase font-bold text-lg'>О нас</h3>
@@ -212,7 +220,7 @@ export const Main = () => {
                     <li className='text-base text-grayText hover:text-white hover:transition-all'><a href=".">Контакты</a></li>
                 </ul>
             </nav>
-        </footer>
+        </footer> */}
     </>
   )
 }

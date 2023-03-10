@@ -125,7 +125,7 @@ export const Main = () => {
                             <div className='flex pt-11 gap-4 sm:pt-6'>
                                 <img className='w-[18px] h-[18px]' src={AvatarOne} alt="" />
                                 <a href='.' className='text-avtorColor'>Music box</a>
-                                <p className='text-grayText'>17/01/2020</p>
+                                <time className='text-grayText' datetime="2020-01-17">17/01/2020</time>
                             </div>
                             <ButtonAlbom/>
                             {/* <div className='pt-12'>
@@ -141,7 +141,7 @@ export const Main = () => {
                             <div className='flex pt-11 gap-4 sm:pt-6'>
                                 <img className='w-[18px] h-[18px]' src={AvatarOne} alt="" />
                                 <a href='.' className='text-avtorColor'>Music box</a>
-                                <p className='text-grayText'>24/02/2020</p>
+                                <time className='text-grayText' datetime="2020-02-24">24/02/2020</time>
                             </div>
                             <ButtonAlbom/>
                             {/* <div className='pt-12'>
